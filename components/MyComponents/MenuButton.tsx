@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 
-export default function MenuButton({ children }) {
+export default function MenuButton({ children }:any) {
   const [triggerHover, setTriggerHover] = useState(false);
 
   useEffect(() => {
