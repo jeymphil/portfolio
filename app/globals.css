@@ -122,7 +122,9 @@ body {
   .line {
     display: none !important;
   }
-
+  .sss{
+    font-size: 5px;
+  }
   
 }
 @media only screen and (max-width: 769px) {
