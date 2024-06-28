@@ -28,7 +28,7 @@ export default function ContactForm() {
     return () => {};
   });
 
-  const triggerEmail = async (data) => {
+  const triggerEmail = async (data:any) => {
     await emailjs
       .send("service_sedy9gv", "template_mu6tudf", data, "8hHQogOcP4JJI8BHs")
       .then((success) => {
@@ -39,7 +39,7 @@ export default function ContactForm() {
       });
   };
 
-  const onFormSubmit = (e) => {
+  const onFormSubmit = (e:any) => {
     e.preventDefault();
     const data = {
       name: e.target[0].value,
@@ -95,7 +95,6 @@ export default function ContactForm() {
                   name="name"
                   placeholder="Enter Name"
                   autoComplete="name"
-
                   required
                 />
               </div>
@@ -106,7 +105,6 @@ export default function ContactForm() {
                   id="email"
                   name="email"
                   autoComplete="email"
-
                   placeholder="Enter Email"
                   required
                 />

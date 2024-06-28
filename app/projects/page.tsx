@@ -19,13 +19,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/DropdownMenu";
 
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
 
 export default function Project() {
-  const scrollToSection = (id) => {
+  const scrollToSection = (id:any) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "center" });
