@@ -95,27 +95,12 @@ export default function Page() {
           <div className="h_title">
             <span className="overflow-hidden w-full inline-block">
               <span className="-translate-y-[-101%] inline-block text-lg">
-                <Dialog>
-                  <DialogTrigger>
-                    <div className="flex items-center p-1 px-3 text-sm rounded-md gap-1 mr-2 border border-black text-black bg-white hover:bg-gray-900 hover:text-white dark:border-white  dark:bg-[#121212] dark:text-white dark:hover:bg-gray-200 dark:hover:text-black">
-                      <FileText /> Résumé
-                    </div>
-                  </DialogTrigger>
-                  <DialogContent className="">
-
-                    <DialogDescription className="h-[400px] overflow-y-scroll ">
-                      <Image
-                        className="overflow-x-hidden"
-                        src="/resume/jeymphil.png"
-                        alt="Picture Of Jeymphil"
-                        height={100}
-                        width={500}
-                        priority
-                      />
-                    </DialogDescription>
-
-                  </DialogContent>
-                </Dialog>
+               
+                <Link href="/resume/jeymphil-résumé.pdf">
+                  <Button className="gap-1 mr-2 border border-black text-black bg-white hover:bg-gray-900 hover:text-white dark:border-white  dark:bg-[#121212] dark:text-white dark:hover:bg-gray-200 dark:hover:text-black">
+                    <FileText /> Résumé
+                  </Button>
+                </Link>
 
                 <Link href="https://github.com/jeymphil" passHref>
 
