@@ -1,4 +1,5 @@
 // layout.tsx
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/Theme-provider";
 import { Inter } from "next/font/google";
@@ -40,6 +41,7 @@ export default function RootLayout({
           <main className="p-5">{children}</main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
