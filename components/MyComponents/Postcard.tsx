@@ -4,7 +4,7 @@ import { Card } from "../ui/card";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function Postcard({ heading, content, date, pin }) {
+export default function Postcard({ heading, content, date, pin }:any) {
     const heroInfiniteRef = useRef(null);
 
     useEffect(() => {
