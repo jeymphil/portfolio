@@ -11,7 +11,6 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-
 } from "@/components/ui/command";
 
 import {
@@ -22,9 +21,10 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
+import { Badge } from "@/components/ui/badge";
 
 export default function Project() {
-  const scrollToSection = (id:any) => {
+  const scrollToSection = (id: any) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -43,8 +43,15 @@ export default function Project() {
             <Command>
               <CommandInput placeholder="Search..." />
               <CommandList>
-
                 <CommandGroup heading="Suggestions">
+                  <CommandItem>
+                    <div
+                      className="w-full"
+                      onClick={() => scrollToSection("15")}
+                    >
+                      Banleaf
+                    </div>
+                  </CommandItem>
                   <CommandItem>
                     <div
                       className="w-full"
@@ -167,6 +174,49 @@ export default function Project() {
       <div className="sm:container ">
         <div className="h-auto grid md:grid-cols-4 gap-5 justify-center items-center">
           <div className="col-span-4 lg:col-span-3 md:col-span-4">
+            <div className="" id="15">
+              <Postcard
+                pin={<Pin color="#d41616" />}
+                heading="Banleaf Application is an image processing app designed to detect diseases in banana plants by capturing images of their leaves. This application is part of our capstone project titled  Implementation of Google Teachable Machine for Disease Identification of Banana Varieties: A Mobile-Based Application. In collaboration with my two group members, I served as the UI/UX designer and programmer for this project."
+                content={
+                  <>
+                    <span className="mr-6 text-bold">
+                      Android Application: Banleaf
+                    </span>
+                    <div className="flex gap-5 overflow-x-auto">
+                      <Image
+                        className="rounded-md h-[300px] w-[200px] object-cover object-top"
+                        src="/banleaf1.gif"
+                        width={150}
+                        height={100}
+                        alt="web view"
+                        unoptimized
+                      />
+                      <Image
+                        className="rounded-md h-[300px] w-[200px] object-cover object-top"
+                        src="/banleaf2.gif"
+                        width={150}
+                        height={100}
+                        alt="mobile view"
+                        unoptimized
+                      />
+                    </div>
+
+                    <span className="text-bold">
+                      Link: Need to ask for my permission first.
+                    </span>
+                  </>
+                }
+                badge={<>
+                <Badge variant="outline">Android Studio</Badge>
+                <Badge variant="outline">XML</Badge>
+                <Badge variant="outline">Java</Badge>
+                <Badge variant="outline">Figma</Badge>
+
+                </>}
+                date="October 16, 2023 - January 29, 2024 ✔"
+              />
+            </div>
             <div className="" id="14">
               <Postcard
                 pin={""}
@@ -205,6 +255,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="June 17, 2024"
               />
             </div>
@@ -244,6 +300,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="June 10, 2024"
               />
             </div>
@@ -288,6 +350,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="June 09, 2024"
               />
             </div>
@@ -326,6 +394,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="May 28, 2024"
               />
             </div>
@@ -364,6 +438,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="May 26, 2024"
               />
             </div>
@@ -402,6 +482,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="May 20, 2024"
               />
             </div>
@@ -442,6 +528,12 @@ export default function Project() {
                     </Link>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="May 01, 2024"
               />
             </div>
@@ -473,6 +565,12 @@ export default function Project() {
                     <span>Link: For Government Use Only.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">MDB</Badge>
+                  </>}
                 date="February 28, 2024"
               />
             </div>
@@ -506,6 +604,10 @@ export default function Project() {
                     <span>Link: For Government Use Only.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  </>}
                 date="February 15, 2024"
               />
             </div>
@@ -537,6 +639,12 @@ export default function Project() {
                     <span>Link: No link.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">MDB</Badge>
+                  </>}
                 date="January 03, 2024"
               />
             </div>
@@ -568,6 +676,12 @@ export default function Project() {
                     <span>Link: No link.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="September 06, 2023"
               />
             </div>
@@ -599,6 +713,12 @@ export default function Project() {
                     <span>Link: No link.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="June 4, 2023"
               />
             </div>
@@ -630,6 +750,12 @@ export default function Project() {
                     <span>Link: No link.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="May 21, 2023"
               />
             </div>
@@ -663,6 +789,12 @@ export default function Project() {
                     <span>Link: No link.</span>
                   </>
                 }
+                badge={<>
+                  <Badge variant="outline">HTML</Badge>
+                  <Badge variant="outline">CSS</Badge>
+                  <Badge variant="outline">Javascript</Badge>
+                  <Badge variant="outline">Bootstrap</Badge>
+                  </>}
                 date="May 06, 2023"
               />
             </div>

@@ -72,7 +72,7 @@ export default function AboutPage() {
             content={
               <>
                 <p>
-                I am an agile team player, adept at adapting to various project requirements and timelines. I&apos;ve been working with a dedicated group named Logiclynzx, a small team formed with my colleagues. We specialize in accepting commissions for school projects, business needs, and more. As the frontend developer of our team, I ensure we deliver high-quality work that meets our clients&apos; expectations, all while maintaining affordable pricing. Our collaborative efforts have consistently resulted in satisfied clients, showcasing our commitment to excellence and teamwork.
+                I am an agile team player, adept at adapting to various project requirements and timelines. I&apos;ve been working with a dedicated group named logiclynxz, a small team formed with my colleagues. We specialize in accepting commissions for school projects, business needs, and more. As the frontend developer of our team, I ensure we deliver high-quality work that meets our clients&apos; expectations, all while maintaining affordable pricing. Our collaborative efforts have consistently resulted in satisfied clients, showcasing our commitment to excellence and teamwork.
                 </p>
               </>
             }
