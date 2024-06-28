@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities{
+  .pause{
+    animation-play-state: paused;
+  }
+  .text-stroke-3 {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    
+}
+.dps{
+  filter: drop-shadow(0 0 10px rgba(248, 195, 17, 0.4));
+}
+.dps::before {
+  content: '';
+  /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
+  background: rgba(248, 194, 17, 0.4);
+  transition: 700ms;
+  opacity:20%;
+  width: 100%;
+  height: 100%;
+}
+.pdsm{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+body {
+  /* background-image: radial-gradient(black 1px, transparent 0); */
+  background-size:50px 50px;
+  background-position: -40px -40px;
+}
+* {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 430px;
+  transition: 200ms;
+}
+
+#card {
+  border-radius: 20px;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: 200ms;
+  background: black;
+  filter: drop-shadow(0 0 32px rgba(248, 195, 17, 0.4));
+}
+#card img{
+  border-radius: 20px;
+}
+.container:hover #card::before {
+  transition: 200ms;
+  content: '';
+  opacity: 80%;
+}
+
+.canvas {
+  perspective: 800px;
+  inset: 0;
+  position: absolute;
+}
+
+#card::before {
+  content: '';
+  /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
+  background: rgba(248, 194, 17, 0.4);
+  filter: blur(2rem);
+  transition: 700ms;
+  opacity:20%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+   /* iOS Safari */
+  -webkit-user-select: none;
+   /* Safari */
+   /* Konqueror HTML */
+  -moz-user-select: none;
+   /* Old versions of Firefox */
+  -ms-user-select: none;
+   /* Internet Explorer/Edge */
+  user-select: none;
+   /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+}
+
+.proj{
+  padding: 5px;
+}
+
+.hover\:rotate-parent:hover .transform {
+  transform: rotate(180deg);
+}
+.samnai{
+  transform: scale(1) !important;
+}
+@media only screen and (max-width: 1028px) {
+    .abtps{
+      display: none;
+    }
+    .abts{
+      position: static;
+      width: 100%;
+    }
+    .asd{
+      grid-column: 8;
+    }
+}
+  @media only screen and (max-width: 444px) {
+  .line {
+    display: none !important;
+  }
+
+  
+}
+@media only screen and (max-width: 769px) {
+  .mobilev{
+    height: 250px;
+    object-position: top !important;
+  }
+  
+}
+@media only screen and (max-width: 1023px) {
+  .psearch{
+    visibility: visible;
+  }
+  
+}
+.rotate{
+  animation: rt infinite;
+}
+@keyframes rt {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+
+  }
+}
+/* .hero-text {
+  font-size: 16px;
+  @screen md {
+    font-size: 17px;
+  }
+  @screen lg {
+    font-size: 26px;
+  }
+} */
+.mb-text{
+  /* font-weight:bolder;
+  font-family: "Shadows Into Light", cursive; */
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.glowing-text {
+  /* font-stretch: condensed; */
+  background: linear-gradient(90deg, rgb(239, 182, 15),rgb(187, 73, 221), rgb(90, 77, 211));
+  background-size: 300%;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  animation: gradientMove 5s ease infinite, glow 10s infinite alternate;
+}
+
+.glowing-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0.75;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50%{
+    background-position: 50% 0%;
+  }
+  75%{
+    background-position: 0% 50%;
+
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.75;
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(.5px);
+  }
+}
