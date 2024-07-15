@@ -210,10 +210,13 @@ export default function Project() {
                 badge={<>
                 <Badge variant="outline">Android Studio</Badge>
                             <Badge variant="outline">Java</Badge>
+                            <Badge variant="outline">Python</Badge>
+                   
+
                   </>}
                 date={
                   <>
-                 <small className=""> October 16, 2023 - January 29, 2024 ✔</small>
+                 <small className=""> January 29, 2024 ✔</small>
                   </>
                 }
               />

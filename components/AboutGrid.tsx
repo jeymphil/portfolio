@@ -24,12 +24,14 @@ import {
   FaHtml5,
   FaMdb,
   FaReact,
+  FaVuejs,
 } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiAndroidstudio,
+  SiNuxtdotjs,
   SiShadcnui,
 } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
@@ -106,7 +108,7 @@ export default function AboutGrid() {
               and user-friendly interfaces, and I&apos;ve honed my skills
               through various school projects and commissions. I am proficient
               in a wide range of technologies, including HTML, CSS, JavaScript,
-              React, Next.js, ShadCN, Bootstrap, MDB, Tailwind, Figma,
+              React, Vue, NextJS, NuxtJS, ShadCN, Bootstrap, MDB, Tailwind, Figma,
               Photoshop, and Adobe Illustrator. While I continually strive to
               improve, I firmly believe that hands-on experience is the best
               way to learn. I am eager to contribute to any company that aligns with
@@ -121,24 +123,26 @@ export default function AboutGrid() {
           </Card>
         </div>
         <div className="h-auto col-span-4 lg:col-span-1 md:col-span-4 sm:col-span-4">
-          <div className="ft ">
+          <div className="ft pt-2 lg:pt-10">
             <span className="glowing-text text-[20px] text-start sm:text-center font-bold flex items-center">
               <Code className="text-black dark:text-white mr-2" /> Frontend
               Developer Tools
             </span>
             {/* <small className="">DEV TOOLS:</small> */}
-            <div className=" gap-2 grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5  sm:grid-cols-7">
+            <div className=" gap-2 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4  sm:grid-cols-6">
               <FaHtml5 className="h-[50px] w-[50px] text-[#e54d26]" />
               <FaCss3Alt className="h-[50px] w-[50px] text-[#3d8fc6]" />
               <RiTailwindCssFill className="h-[50px] w-[50px] text-[#38bdf8]" />
               <FaReact className="h-[50px] w-[50px] text-[#61dafb]" />
+              <FaVuejs className="h-[50px] w-[50px] text-[#3fb27f]"/>
               <RiNextjsFill className="h-[50px] w-[50px]" />
+              <SiNuxtdotjs className="h-[50px] w-[50px] text-[#00d57e]"/>
               <FaBootstrap className="h-[50px] w-[50px] text-[#712cf9]" />
               <FaMdb className="h-[50px] w-[50px] text-[#348ad8]" />
               <SiShadcnui className="h-[50px] w-[50px] " />
               <FaGithub className="h-[50px] w-[50px] text-black bg-white rounded-full" />
               <FaGitAlt className="h-[50px] w-[50px] text-[#f34f29]" />
-            </div>
+                          </div>
           </div>
           <div className="ft mt-[30px]">
             <span className=" glowing-text text-[20px] text-start sm:text-center font-bold flex items-center">
@@ -146,7 +150,7 @@ export default function AboutGrid() {
               Designer Tools
             </span>
             {/* <small className="">DESIGN TOOLS:</small> */}
-            <div className=" gap-2 grid grid-cols-7 md:grid-cols-5 lg:grid-cols-5  sm:grid-cols-7">
+            <div className=" gap-2 grid grid-cols-6 md:grid-cols-4 lg:grid-cols-4  sm:grid-cols-6">
               <SiAdobephotoshop className="h-[50px] w-[50px] text-[#001e36] bg-[#31a8ff] rounded-lg" />
               <CgFigma className="h-[50px] w-[50px] text-[#f24e1e]" />
               <SiAdobeillustrator className="h-[50px] w-[50px] text-[#faa625]" />

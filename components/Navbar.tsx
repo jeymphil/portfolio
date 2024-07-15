@@ -25,7 +25,7 @@ export default function Navbar() {
     ],
   };
   return (
-    <div className="shadow-md backdrop-blur-md navbar z-10 bg-[rgba] fixed w-full flex justify-center gap-3 h-[50px] items-center ">
+    <div className="shadow-md bg-white dark:bg-[#030303] dark:shadow-gray-900 navbar z-10 bg-[rgba] fixed w-full flex justify-center gap-3 h-[50px] items-center ">
       {navList.items.map((option: any, optionkey: number) => (
         <a
           className="nav flex gap-1 cursor-pointer p-2 transition hover:bg-black hover:text-white rounded-lg"

@@ -22,12 +22,14 @@ import {
   FaMdb,
   FaPenSquare,
   FaReact,
+  FaVuejs,
 } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiAndroidstudio,
+  SiNuxtdotjs,
   SiShadcnui,
 } from "react-icons/si";
 import { TbFileTypeXml } from "react-icons/tb";
@@ -80,24 +82,26 @@ export default function AboutPage() {
           />
         </div>
         <div className="relative h-auto col-span-4 lg:col-span-1 md:col-span-4 sm:col-span-4">
-          <div className="abts fixed top-[13%] w-[300px]">
+          <div className="abts fixed top-[11%] w-[300px]">
             <div className="ft ">
               <span className="glowing-text text-[20px] text-start sm:text-center font-bold flex items-center">
                 <Code className="text-black dark:text-white mr-2" /> Frontend
                 Developer Tools
               </span>
               {/* <small className="">DEV TOOLS:</small> */}
-              <div className=" gap-2 grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5  sm:grid-cols-7">
-                <FaHtml5 className="h-[50px] w-[50px] text-[#e54d26]" />
-                <FaCss3Alt className="h-[50px] w-[50px] text-[#3d8fc6]" />
-                <RiTailwindCssFill className="h-[50px] w-[50px] text-[#38bdf8]" />
-                <FaReact className="h-[50px] w-[50px] text-[#61dafb]" />
-                <RiNextjsFill className="h-[50px] w-[50px]" />
-                <FaBootstrap className="h-[50px] w-[50px] text-[#712cf9]" />
-                <FaMdb className="h-[50px] w-[50px] text-[#348ad8]" />
-                <SiShadcnui className="h-[50px] w-[50px] " />
-                <FaGithub className="h-[50px] w-[50px] text-black bg-white rounded-full" />
-                <FaGitAlt className="h-[50px] w-[50px] text-[#f34f29]" />
+              <div className=" gap-2 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4  sm:grid-cols-6">
+              <FaHtml5 className="h-[50px] w-[50px] text-[#e54d26]" />
+              <FaCss3Alt className="h-[50px] w-[50px] text-[#3d8fc6]" />
+              <RiTailwindCssFill className="h-[50px] w-[50px] text-[#38bdf8]" />
+              <FaReact className="h-[50px] w-[50px] text-[#61dafb]" />
+              <FaVuejs className="h-[50px] w-[50px] text-[#3fb27f]"/>
+              <RiNextjsFill className="h-[50px] w-[50px]" />
+              <SiNuxtdotjs className="h-[50px] w-[50px] text-[#00d57e]"/>
+              <FaBootstrap className="h-[50px] w-[50px] text-[#712cf9]" />
+              <FaMdb className="h-[50px] w-[50px] text-[#348ad8]" />
+              <SiShadcnui className="h-[50px] w-[50px] " />
+              <FaGithub className="h-[50px] w-[50px] text-black bg-white rounded-full" />
+              <FaGitAlt className="h-[50px] w-[50px] text-[#f34f29]" />
               </div>
             </div>
             <div className="ft mt-[30px]">
@@ -106,7 +110,7 @@ export default function AboutPage() {
                 Designer Tools
               </span>
               {/* <small className="">DESIGN TOOLS:</small> */}
-              <div className=" gap-2 grid grid-cols-7 md:grid-cols-5 lg:grid-cols-5  sm:grid-cols-7">
+              <div className=" gap-2 grid grid-cols-6 md:grid-cols-4 lg:grid-cols-4  sm:grid-cols-6">
                 <SiAdobephotoshop className="h-[50px] w-[50px] text-[#001e36] bg-[#31a8ff] rounded-lg" />
                 <CgFigma className="h-[50px] w-[50px] text-[#f24e1e]" />
                 <SiAdobeillustrator className="h-[50px] w-[50px] text-[#faa625]" />
